@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+%\usepackage{times}
+\usepackage{cite}
+
+%this is a comment
+\title{Emergency Button}
+\author{Jared Tence, Tyler Farnham}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item The problem
+
+Locationional technology has vastly improved such that any smartphone, tablet, or computer can pinpoint their location with high accuracy. Using GPS, Wifi, or Cell ID these devices can give real time location down to the street address and also provide a picture of where we are. Despite these advances current 911 networks fail continuously to get the location of the caller. This is unacceptable as people could and have lost their lives due to firefighters, cops, and paramedics not responding to the scene in time.
+
+
+\item What is causing this problem
+
+The current infrastructure that 911 call centers used to locate their caller was made for landlines and not cell phones. Current 911 centers use process of requesting the location information of a caller from a cellphone tower. This process takes time as the request is often sent manually and inaccurate as the cellphone tower sometimes cannot get an exact location or respond at all. This is a huge problem as “In 2016, an estimated 62.9 percent of the population worldwide already owned a mobile phone, “ and “It is estimated that about 70 percent of 911 calls are placed from wireless phones”. These statistics indicate that 911 centers are become more and more unprepared to assist people in emergency.
+
+
+\item The severity of the problem
+
+Emergency services require to be update when responding to emergency situations. A few seconds could be the difference between life and death in situations such as a house fire, a medical emergency, or a violent crime. That is why it is vital to have the address right away. Below is some excerpts from "911's deadly flaw: Lack of location data" and article from USA Today. \cite{flaw}
+
+\begin{itemize}
+    \item “In California, more than half of cellphone calls didn't transmit location to 911 from 2011 to 2013, and it's getting worse. Last year, about 12.4 million, or 63\%, of California's cell phone calls to 911 didn't share location. Among the worst places: Silicon Valley. In December 2012, precise location was shared in 10\%-37\% of the area's emergency calls, depending on the wireless carrier.”
+    \item “In Colorado, 58\% of the 5.8 million cell phone-to-911 calls last year transmitted coordinates, according to data obtained from the Colorado 911 Resource Center.”
+    \item “In Texas, two-thirds of cellphone calls in a sample of calls from major cities – including Austin and Houston – reached 911 without an instant fix on location from 2010 through 2013.”
+    \item “In the Virginia suburbs outside Washington, Fairfax County reported 25\% of cellphone calls included precise location data in 2014, and Loudoun County said 29\% of mobile calls did over the last six months of 2014.”
+
+\end{itemize}
+
+
+\item Our Solution
+
+Currently, major cell networks are working on a fix that would update the current system so that the request and response system is faster and more accurate. The FCC right now has mandated that all cell networks be able locate 80\% of phones by 2021. Because this will take more than 3+ years to accomplish we came up with a better solution. Because the data is already on the phone we could create an app that would send 911 a text that would include the person's location and personal information. \cite{text}
+
+\item Functionality
+
+There are two different ways that this app can be used. The first way is manually opening up the app and pressing the emergency button. When the emergency button is pressed, the application will automatically send a message to 911 with your location information and will start a call with 911. The other way that the app can be used is simply calling 911. The application latches onto your phone’s outgoing call system and will automatically send an accompanying text message with your location information in it to 911. The entire app runs locally on the user’s device and will therefore not need to query servers or databases for information. This should keep the actions of the app quick, as is required by an application relied on in  an emergency.
+
+\item Performance Requirements
+
+Ideally, this application will not take up very many resources locally on the users end while it is just idling. Because it runs in the background of the device the entire time, it may be unrealistic to think that it would have no effect on the performance on the device while it is running, though because the resource usage while it is idling is so small, we can nearly neglect it in our designs. The active performance requirement is also negligible, because when the user opens the app, they are intending on spending more of their device’s power on that action. The application in general has low hardware requirements and we should not need to worry about performance at all.
+
+\item Resources
+
+If we were to develop this app we would need the development environment for the system we choose to create it for. If we decide to program this app for Phone's we would have to own Mac’s along with a copy of Xcode and a apple developers license. If we choose to create this app for Android we would use a variety of paid and free developing environments.
+
+\item Limitations
+
+This app’s limitations will be specific to the phone, its operating system, and to 911 services capabilities. Functionality wise, as long as the operating system allows for apps to send text messages or send calls our app will function as specified. We will see limitations when it comes down to development, this app’s success realize on our understanding of the operating system we develop it for along with our ability to program a graphical interface that will execute and send the users information. Also we have to keep in mind the limitations of the 911 call center and what it can receive from it's text messages. For example whether or not the call center supports pictures is important because it will effect what medium of information we send.
+
+
+\end{enumerate}
+
+
+\bibliographystyle{unsrt}
+\bibliography{sample} 
+
+
+
+\end{document}
+
